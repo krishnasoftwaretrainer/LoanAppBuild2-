@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #607680;
+    min-height: 100vh;
+    margin: 0;
+}
+p{
+    color: red;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.container{
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+    height: 800px;
+    max-width: 100%;
+    overflow: hidden;
+   
+}
+
+.header{
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+    border-bottom: 2px solid #f0f0f0;
+    /* text-align: center; */
+}
+.header h2{
+    margin: 0;
+}
+.form{
+    padding: 30px 40px;
+}
+.field{
+    margin-top: 4px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.field label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.field sup{
+    color: red;
+}
+
+.field input:not(.terms){
+    display: block;
+    border-radius: 4px;
+    border: 2px solid #f0f0f0;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+.field span{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    visibility: hidden;
+}
+.field small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form .button{
+    background-color: rgb(90,104, 235);
+    border: 2px solid  rgb(90,104, 235);
+    color: white;
+    padding: 10px;
+    display: block; 
+     width: 100%; 
+    font-size: 20px;
+}
+.field.success input{
+    background-color: #2ecc71;
+}
+.field.error input{
+    background-color: #e74c3c;
+}
+.field.success span.success{
+    color:#2ecc71;
+    visibility: visible;
+}
+.field.error span.error{
+    color :#e74c3c;
+    visibility: visible;
+}
+.field.error span.success{
+    visibility: none;
+}
+.field.success span.error{
+    visibility: none;
+}
+.field.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
+.hiden{
+    display: flex;
+    flex-direction: column;
+     display: none; 
+}
+.hiden h4{
+    margin-top: 20px;
+    font-size: 20px;
+    
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
